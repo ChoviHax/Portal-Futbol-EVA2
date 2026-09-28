@@ -1,0 +1,55 @@
+{% extends 'futbol/base.html' %}
+{% load static %}
+
+{% block title %}
+Inicio - Portal Fútbol
+{% endblock %}
+
+{% block content %}
+
+<section class="row align-items-center g-5">
+
+    <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-3">
+            Bienvenido a Portal Fútbol
+        </h2>
+
+        <p class="lead text-muted">
+            Un sitio informativo dedicado al mundo del fútbol,
+            donde podrás conocer información sobre jugadores
+            destacados.
+        </p>
+
+        <p>
+            Explora nuestro portal y descubre datos como la posición,
+            nacionalidad y equipo de diferentes futbolistas.
+        </p>
+
+        <a href="{% url 'jugadores' %}" class="btn btn-success btn-lg mt-3">
+            Ver jugadores
+        </a>
+    </div>
+
+    <div class="col-lg-6">
+        <img src="{% static 'futbol/img/banner.jpg' %}"
+             class="img-fluid rounded shadow"
+             alt="Imagen de fútbol">
+    </div>
+
+</section>
+
+
+<section class="text-center mt-5 pt-5">
+
+    <h2 class="fw-bold">
+        Sobre Portal Fútbol
+    </h2>
+
+    <p class="text-muted mt-3">
+        Portal Fútbol presenta información almacenada en archivos JSON
+        y procesada mediante Django desde el lado del servidor.
+    </p>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Portal Fútbol{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/futbol/css/bootstrap.min.css?v=2">
+    <link rel="stylesheet" href="{% static 'futbol/css/estilos.css' %}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'inicio' %}">
+            Portal Fútbol
+        </a>
+
+        <div class="navbar-nav">
+            <a class="nav-link" href="{% url 'inicio' %}">Inicio</a>
+            <a class="nav-link" href="{% url 'jugadores' %}">Jugadores</a>
+            <a class="nav-link" href="{% url 'equipos' %}">Equipos</a>
+        </div>
+    </div>
+</nav>
+
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Portal Fútbol</h1>
+            <p class="lead">
+                Información sobre jugadores y el mundo del fútbol
+            </p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">
+            Portal Fútbol - Evaluación Programación Back End
+        </p>
+    </footer>
+
+    <script src="{% static 'futbol/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>

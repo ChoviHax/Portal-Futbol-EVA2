@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "Alexis Caiceo",
+        "posicion": "Delantero",
+        "nacionalidad": "Chile",
+        "equipo": "Montreal",
+        "imagen": "alexis.jpg"
+    },
+    {
+        "nombre": "Erling Haaland",
+        "posicion": "Delantero",
+        "nacionalidad": "Noruega",
+        "equipo": "Manchester City",
+        "imagen": "haaland.jpg"
+    },
+    {
+        "nombre": "Lionel Messi",
+        "posicion": "Delantero",
+        "nacionalidad": "Argentina",
+        "equipo": "Inter Miami",
+        "imagen": "messi.jpg"
+    },
+    {
+        "nombre": "Kevin De Bruyne",
+        "posicion": "Mediocampista",
+        "nacionalidad": "Bélgica",
+        "equipo": "Napoli",
+        "imagen": "kevin.jpg"
+    }
+]
